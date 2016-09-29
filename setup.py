@@ -19,7 +19,7 @@ tests_require = _to_list(parse_requirements('requirements-test.txt', session=Fal
 
 setup(
     name='proxy_bonanza',
-    version='1.0.0',
+    version='1.0.1',
     description='A lightweight python client for Proxy Bonanza service',
     long_description=long_description,
     url='http://github.com/victormartinez/python_proxy_bonanza',
