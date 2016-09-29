@@ -22,7 +22,7 @@ setup(
     version='1.0.0',
     description='A lightweight python client for Proxy Bonanza service',
     long_description=long_description,
-    url='http://github.com/victormartinez/python-proxy-bonanza',
+    url='http://github.com/victormartinez/python_proxy_bonanza',
     license='MIT License',
     packages=find_packages(exclude=['docs', 'tests*']),
     tests_require=tests_require,
