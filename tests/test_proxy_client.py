@@ -2,7 +2,8 @@
 import pytest
 from mock import MagicMock
 from requests.models import Response, HTTPError
-from client import ProxyBonanzaClient
+
+from proxy_bonanza.client import ProxyBonanzaClient
 
 
 @pytest.fixture
