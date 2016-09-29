@@ -31,7 +31,7 @@ setup(
     keywords='bonanza',
     author='Victor Martinez',
     author_email='vcrmartinez@gmail.com',
-    classifiers=(
+    classifiers=[
         'Intended Audience :: Developers',
         'License :: Public Domain',
         'Natural Language :: English',
@@ -40,5 +40,5 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    )
+    ]
 )
