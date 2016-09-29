@@ -8,6 +8,8 @@ A lightweight client to get proxies from Proxy Bonanza service
 At first it is necessary to get the user package ids and, then, get the proxies available for each id.
 
 ```
+from proxy_bonanza.client import ProxyBonanzaClient
+
 client = ProxyBonanzaClient(api_key='<YOUR API KEY>')
 ids = client.get_user_package_ids()
 proxies = client.get_proxies(id1)
