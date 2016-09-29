@@ -96,7 +96,7 @@ def test_error_when_api_key_is_not_provided():
 
 
 def test_getting_user_package_ids(monkeypatch, get_data_from_api):
-    monkeypatch.setattr("client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_api))
+    monkeypatch.setattr("proxy_bonanza.client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_api))
     client = ProxyBonanzaClient(api_key='fake123api')
 
     ids = client.get_user_package_ids()
@@ -104,7 +104,7 @@ def test_getting_user_package_ids(monkeypatch, get_data_from_api):
 
 
 def test_getting_proxies(monkeypatch, get_data_from_userpackage_id):
-    monkeypatch.setattr("client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_userpackage_id))
+    monkeypatch.setattr("proxy_bonanza.client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_userpackage_id))
     client = ProxyBonanzaClient(api_key='fake123api')
 
     proxies = client.get_proxies(212121)

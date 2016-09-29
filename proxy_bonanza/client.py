@@ -47,5 +47,9 @@ class ProxyBonanzaClient(object):
         if not response.ok:
             response.raise_for_status()
 
-        json_result = json.loads(response.content.decode('utf-8'))
+        content = response.content
+        if type(content) == 'bytes':
+            content = content.decode('utf-8')
+
+        json_result = json.loads(content)
         return json_result['data']
