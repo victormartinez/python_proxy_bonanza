@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-import requests
 import json
+
+import requests
+
 
 class ProxyBonanzaClient(object):
     USER_PACKAGES_ENDPOINT = "https://api.proxybonanza.com/v1/userpackages.json"
@@ -45,5 +47,5 @@ class ProxyBonanzaClient(object):
         if not response.ok:
             response.raise_for_status()
 
-        json_result = json.loads(response.content)
+        json_result = json.loads(response.content.decode('utf-8'))
         return json_result['data']
