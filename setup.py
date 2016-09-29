@@ -24,11 +24,6 @@ setup(
     long_description=long_description,
     url='http://github.com/victormartinez/python_proxy_bonanza',
     license='MIT License',
-    packages=find_packages(exclude=['docs', 'tests*']),
-    tests_require=tests_require,
-    install_requires=install_requires,
-    setup_requires=['pytest-runner==2.8'],
-    keywords='bonanza',
     author='Victor Martinez',
     author_email='vcrmartinez@gmail.com',
     classifiers=[
@@ -40,5 +35,10 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
-    ]
+    ],
+    keywords=['proxy', 'bonanza'],
+    packages=find_packages(exclude=['docs', 'tests*']),
+    install_requires=install_requires,
+    tests_require=tests_require,
+    setup_requires=['pytest-runner==2.8']
 )
