@@ -48,7 +48,7 @@ class ProxyBonanzaClient(object):
             response.raise_for_status()
 
         content = response.content
-        if type(content) == 'bytes':
+        if isinstance(content, bytes):
             content = content.decode('utf-8')
 
         json_result = json.loads(content)
