@@ -18,7 +18,8 @@ class ProxyBonanzaClient(object):
         Get the list of proxies available based on the user package id
 
         :param user_package_id:
-        :return: list of dictionaries containing the keys active, id, ip, modified, port_http, port_socks, proxyserver
+        :return: list of dictionaries containing the keys active, id, ip,
+                 modified, port_http, port_socks, proxyserver
         '''
         api_url = self.PROXIES_URL_ENDPOINT_TEMPLATE.format(user_package_id)
         data = self._get_api_data(api_url)
@@ -35,6 +36,9 @@ class ProxyBonanzaClient(object):
     def get_user_package_ids(self):
         data_list = self._get_api_data(self.USER_PACKAGES_ENDPOINT)
         return [d['id'] for d in data_list]
+
+    def get_user_packages(self):
+        return self._get_api_data(self.USER_PACKAGES_ENDPOINT)
 
     def _get_api_data(self, api_url):
         '''
