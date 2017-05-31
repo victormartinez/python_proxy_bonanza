@@ -10,9 +10,9 @@ At first it is necessary to get the user package ids and, then, get the proxies 
 ```
 from proxy_bonanza.client import ProxyBonanzaClient
 
-client = ProxyBonanzaClient(api_key='<YOUR API KEY>')
+client = ProxyBonanzaClient(api_key='<YOUR_API_KEY>')
 ids = client.get_user_package_ids()
-proxies = client.get_proxies(id1)
+proxies = client.get_proxies(<YOUR_ID>)
 
 ```
 
@@ -56,3 +56,11 @@ proxies = client.get_proxies(id1)
     u'password': u'qwerty123'
 }
 ```
+
+### Contributing
+1. Clone the repository
+1. Create a virtualenv and install the requirements.txt
+1. Develop the feature or fix
+1. Create and execute the tests using pytest
+1. Open a Pull Request =)
+
