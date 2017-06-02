@@ -1,6 +1,10 @@
 # python-proxy-bonanza
 
-A lightweight client to get proxies from Proxy Bonanza service
+A lightweight client to get proxies from Proxy Bonanza service.
+
+## Pypi
+
+https://pypi.python.org/pypi/proxy-bonanza
 
 
 ## Usage
@@ -58,9 +62,18 @@ proxies = client.get_proxies(<YOUR_ID>)
 ```
 
 ### Contributing
-1. Clone the repository
-1. Create a virtualenv and install the requirements.txt
+1. Clone the repository and set up your environment
 1. Develop the feature or fix
 1. Create and execute the tests using pytest
 1. Open a Pull Request =)
+
+##### Note:
+To setup your environment just run:
+```console
+$ git clone git@github.com:victormartinez/python_proxy_bonanza.git
+$ python -m venv <your_virtual_env>
+$ pip install -r requirements.txt
+$ pip install -r requirements-test.txt
+```
+
 
