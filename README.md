@@ -2,6 +2,10 @@
 
 A lightweight client to get proxies from Proxy Bonanza service.
 
+[![Build Status](https://travis-ci.org/victormartinez/python_proxy_bonanza.svg?branch=master)](https://travis-ci.org/victormartinez/python_proxy_bonanza)
+[![Code Health](https://landscape.io/github/victormartinez/python_proxy_bonanza/master/landscape.svg?style=flat)](https://landscape.io/github/victormartinez/python_proxy_bonanza/master)
+
+
 ## Pypi
 
 https://pypi.python.org/pypi/proxy-bonanza
