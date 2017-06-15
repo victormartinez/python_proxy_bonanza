@@ -103,6 +103,14 @@ def test_getting_user_package_ids(monkeypatch, get_data_from_api):
     assert ids == [212121, 31313131]
 
 
+def test_getting_user_packages(monkeypatch, get_data_from_api):
+    monkeypatch.setattr("proxy_bonanza.client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_api))
+    client = ProxyBonanzaClient(api_key='fake123api')
+
+    packages = client.get_user_packages()
+    assert packages == get_data_from_api
+
+
 def test_getting_proxies(monkeypatch, get_data_from_userpackage_id):
     monkeypatch.setattr("proxy_bonanza.client.ProxyBonanzaClient._get_api_data", MagicMock(return_value=get_data_from_userpackage_id))
     client = ProxyBonanzaClient(api_key='fake123api')
